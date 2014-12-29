@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, ServiceType) {
 @end
 
 @implementation ViewController
-
+@synthesize shouldScroll;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -57,12 +57,26 @@ typedef NS_ENUM(NSInteger, ServiceType) {
     [gestureRecognizers removeObject:headerCollectionView.panGestureRecognizer];
     [gestureRecognizers addObject:contentCollectionView.panGestureRecognizer];
     [headerCollectionView setGestureRecognizers:gestureRecognizers];
+    ContentCollectionView *conCollView = (ContentCollectionView *)contentCollectionView;
+    conCollView.controller = self;
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [contentCollectionView scrollToItemAtIndexPath:currentIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+}
+-(BOOL)shouldScroll{
+    return shouldScroll;
+}
+-(void)setShouldScroll:(BOOL)b{
+    NSLog(@"setting should scroll to %i", b);
+    headerCollectionView.scrollEnabled = b;
+    contentCollectionView.scrollEnabled = b;
+    
+    shouldScroll = b;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -129,6 +143,8 @@ typedef NS_ENUM(NSInteger, ServiceType) {
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    //if (self.shouldScroll) {
+    
     if(scrollView == contentCollectionView)
     {
         float offsetPercentage = scrollView.contentOffset.x / scrollView.contentSize.width;
@@ -160,6 +176,7 @@ typedef NS_ENUM(NSInteger, ServiceType) {
             [self updateCollectionView];
         }
     }
+//}
 }
 
 -(void)updateCollectionView

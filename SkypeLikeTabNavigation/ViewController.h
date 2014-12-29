@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContentCollectionView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
 
+    
+}
+@property (nonatomic) BOOL shouldScroll;
+
+//-(void)setShouldScroll:(BOOL)b;
 
 @end
 

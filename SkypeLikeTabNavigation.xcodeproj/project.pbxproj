@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882E57C21A51C3B10089A13E /* ContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E57C11A51C3B10089A13E /* ContentCollectionView.m */; };
 		EB2F2C661A5122C50036EEE4 /* ContentCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2C651A5122C50036EEE4 /* ContentCollectionCell.m */; };
 		EB5E48851A42F76D0026033E /* HeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5E48841A42F76D0026033E /* HeaderFlowLayout.m */; };
 		EB9FDD371A415D1200CEB732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FDD361A415D1200CEB732 /* main.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		882E57C01A51C3B10089A13E /* ContentCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionView.h; sourceTree = "<group>"; };
+		882E57C11A51C3B10089A13E /* ContentCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionView.m; sourceTree = "<group>"; };
 		EB2F2C641A5122C50036EEE4 /* ContentCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionCell.h; sourceTree = "<group>"; };
 		EB2F2C651A5122C50036EEE4 /* ContentCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionCell.m; sourceTree = "<group>"; };
 		EB5E48831A42F76D0026033E /* HeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderFlowLayout.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				EB9FDD341A415D1200CEB732 /* Supporting Files */,
 				EB2F2C641A5122C50036EEE4 /* ContentCollectionCell.h */,
 				EB2F2C651A5122C50036EEE4 /* ContentCollectionCell.m */,
+				882E57C01A51C3B10089A13E /* ContentCollectionView.h */,
+				882E57C11A51C3B10089A13E /* ContentCollectionView.m */,
 			);
 			path = SkypeLikeTabNavigation;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			files = (
 				EB5E48851A42F76D0026033E /* HeaderFlowLayout.m in Sources */,
 				EB9FDD3D1A415D1200CEB732 /* ViewController.m in Sources */,
+				882E57C21A51C3B10089A13E /* ContentCollectionView.m in Sources */,
 				EB9FDD3A1A415D1200CEB732 /* AppDelegate.m in Sources */,
 				EB2F2C661A5122C50036EEE4 /* ContentCollectionCell.m in Sources */,
 				EB9FDD371A415D1200CEB732 /* main.m in Sources */,

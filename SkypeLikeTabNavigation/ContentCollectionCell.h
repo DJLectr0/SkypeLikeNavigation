@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "ContentCollectionView.h"
 
-@interface ContentCollectionCell : UICollectionViewCell
+@interface ContentCollectionCell : UICollectionViewCell {
+    UIViewController* controller;
+    
+}
 
 @end
